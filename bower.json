@@ -1,0 +1,24 @@
+{
+  "name": "afdhal_starwars",
+  "description": "Salestock placement test",
+  "main": "index.js",
+  "authors": [
+    "Afdhal Rizki <afdhal.hr@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/afdhalrizki/get-starwars",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "^1.5.5",
+    "angular-ui-router": "^0.3.0",
+    "restangular": "^1.5.2",
+    "angular-bootstrap": "^1.3.2"
+  }
+}

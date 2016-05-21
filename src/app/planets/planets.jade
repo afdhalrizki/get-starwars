@@ -1,0 +1,18 @@
+.row(ng-repeat="planet in planets")
+      .col-sm-12.col-md-12
+        .thumbnail
+          //- img(ng-src='', alt='...')
+          .caption
+            h3 {{planet.name}}
+            p 
+                ul
+                    li Terrain          : {{planet.terrain}}
+                    li Surface Water    : {{planet.surface_water}}
+                    li Rotation Period  : {{planet.rotation_period}}
+                    li Population       : {{planet.population}}
+                    li Orbital Period   : {{planet.orbital_period}}
+                    li Gravity          : {{planet.gravity}}
+                    li Diameter         : {{planet.diameter}}
+                    li Climate          : {{planet.climate}}
+            //- p
+              a.btn.btn-primary(ui-sref="film-detail({filmId: film.id})", role='button') View details »

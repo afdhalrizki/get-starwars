@@ -1,7 +1,25 @@
-!DOCTYPE html
-html
+doctype html
+html(ng-app="starwars")
 	head
-		title
+		title Starwars Maniac
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7", crossorigin="anonymous")
 
 	body
-		span Hello
+		div(ng-include='', src="'/app/navbar/navbar.html'")
+		
+		ui-view
+		script(type='text/javascript', src='/../bower_components/angular/angular.min.js')
+		script(type='text/javascript', src='/../bower_components/angular-ui-router/release/angular-ui-router.min.js')
+		script(type='text/javascript', src='/../bower_components/restangular/dist/restangular.min.js')
+		script(type='text/javascript', src='/../bower_components/lodash/dist/lodash.min.js')
+		script(type='text/javascript', src='/../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js')
+
+		script(type='text/javascript', src='/app/config.js')
+
+		script(type='text/javascript', src='/app/planets/js/planets.js')
+		script(type='text/javascript', src='/app/people/js/people.js')
+		script(type='text/javascript', src='/app/films/js/films.js')
+		script(type='text/javascript', src='/app/list/js/list.js')
+		script(type='text/javascript', src='/app/home/js/home.js')
+		script(type='text/javascript', src='/app/app.js')
+

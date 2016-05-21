@@ -1,0 +1,16 @@
+.row(ng-repeat="person in people")
+      .col-sm-12.col-md-12
+        .thumbnail
+          //- img(ng-src='', alt='...')
+          .caption
+            h3 {{person.name}}
+            p
+                ul
+                    li Gender       : {{person.gender}}
+                    li Height       : {{person.height}}
+                    li Weight       : {{person.mass}}
+                    li Skin Color   : {{person.skin_color}}
+                    li Hair Color   : {{person.hair_color}}
+                    li Eye Color    : {{person.eye_color}}
+            //- p
+              a.btn.btn-primary(ui-sref="film-detail({filmId: film.id})", role='button') View details »
